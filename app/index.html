@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <title>FYPA</title>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <a href="#/movie_list" class="home">Home</a>
+            <a href="#/movie_history" class="history">History</a>
+        </div>
+    </div>
+
+    <div ng-view></div>
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-route.min.js"></script>
+    <script type="text/javascript" src="lib/angular/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/idangerous.swiper.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript" src="js/services/paramServices.js"></script>
+    <script type="text/javascript" src="js/services/movieServices.js"></script>
+
+    <script type="text/javascript" src="js/controllers/indexCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/movieCtrl.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container');
+    </script>
+
+
+</body>
+
+</html>

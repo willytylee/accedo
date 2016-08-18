@@ -1,0 +1,26 @@
+<shortcut></shortcut>
+<p class="clear_history" ng-click="clear_history()">Clear History</p>
+<div class="content hidden-xs" ng-init="get_history_list();">
+    <br>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div ng-repeat="item in list track by $index" end-repeat class="swiper-slide" style="text-align: center">
+                <img ng-click="get_movie_page(item.id, item.contents[0].url)" ng-src="{{item.images[0].url}}" movie_id="{{item.id}}" url="{{item.contents[0].url}}" style="min-height:180px;width:100%">
+                {{item.title}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content visible-xs-inline" ng-init="id = 0">
+    <div class="container">
+        <div class="row" ng-repeat="(key, rows) in chunkedData">
+            <div class="col-xs-6" ng-repeat="(key2, item) in rows">
+                <div ng-class="id == key*2+key2 ? 'image-active' : ''">
+                    <img id="{{key*2+key2}}" ng-click="get_movie_page(item.id, item.contents[0].url)" movie_id="{{item.id}}" url="{{item.contents[0].url}}" ng-src="{{item.images[0].url}}" style="width: 100%"><br>
+                    {{item.title}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

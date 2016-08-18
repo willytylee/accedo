@@ -1,0 +1,28 @@
+.swiper-container {
+  width: 100%;
+  margin: 20px auto;
+}
+.swiper-slide-active img {
+  border: 6px solid blue;
+  width: 110% !important;
+}
+.image-active img {
+  border: 6px solid blue;
+  width: 105% !important;
+}
+.clear_history {
+  cursor: pointer;
+}
+.header {
+  background-color: grey;
+}
+.header a {
+  padding: 10px 0;
+  color: white;
+}
+.header .home {
+  float: left;
+}
+.header .history {
+  float: right;
+}
