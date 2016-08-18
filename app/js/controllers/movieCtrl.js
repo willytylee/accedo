@@ -10,7 +10,6 @@ app.controller('movieCtrl', function($sce, $rootScope, $scope, $route, $location
     };
 
     $scope.get_movie_list = function() {
-        $templateCache.removeAll();
         
         movieServices.get_movie_list().then(function(response) {
             $scope.list = response.entries;
@@ -21,7 +20,6 @@ app.controller('movieCtrl', function($sce, $rootScope, $scope, $route, $location
 
     $scope.get_history_list = function(){
 
-        $templateCache.removeAll();
 
         movieServices.get_history_list().then(function(response) {
             $scope.history_array = [];
