@@ -1,5 +1,5 @@
 <h2>Simple Media App VOD Application</h2>
-<hr>
+
 <h4>Install Instruction</h4>
 
 - Clone the source code to your /www directory
